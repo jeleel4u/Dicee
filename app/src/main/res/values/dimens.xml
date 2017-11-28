@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dice_size">50dip</dimen>
+    <dimen name="dice_padding">50dp</dimen>
+    <dimen name="margin_gap">50dp</dimen>
+    <dimen name="no_padding">0dp</dimen>
+</resources>

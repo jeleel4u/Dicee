@@ -8,7 +8,7 @@ import android.widget.ImageView;
 
 import java.util.Random;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,9 +23,12 @@ public class MainActivity extends AppCompatActivity {
                 R.drawable.dice5,
                 R.drawable.dice6
         };
+
         Button roll = findViewById(R.id.btn_roll);
         final ImageView dice1 = findViewById(R.id.image_dice1);
         final ImageView dice2 = findViewById(R.id.image_dice2);
+
+        //roll.setOnClickListener(this);
 
         roll.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,5 +41,15 @@ public class MainActivity extends AppCompatActivity {
                 dice2.setImageResource(dices[num]);
             }
         });
+    }
+
+    @Override
+    public void onClick(View view) {
+
+    }
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+
     }
 }
